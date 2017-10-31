@@ -5,9 +5,7 @@ NodeJS with apache2
 
 # Objectives
 
-* Facilitate use Alpine to start new services
-* Enable portability
-* Facilitate access for all users
+* Facilitate use AngularCLI with ubuntu latest version
 * Reduce risks of incompatibility of packages 
 
 
@@ -15,6 +13,9 @@ NodeJS with apache2
 
 ```
 Examples to start this container (linux):
+docker run -it --name your_container ubuntu_nodejs
+docker run -it -p 80:80 --name your_container ubuntu_nodejs
+docker run -it --name your_container -v /$HOME/ndjs:/var/www/html ubuntu_nodejs
 
 
 ```
@@ -22,11 +23,10 @@ Examples to start this container (linux):
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
 
 
 
 ## Authors
 
-* **Walfran** [https://github.com/walfrn]
+* [https://github.com/walfrn]
 
